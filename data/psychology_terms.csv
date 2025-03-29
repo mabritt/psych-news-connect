@@ -1,52 +1,568 @@
 Term,Definition
-Classical Conditioning,Learning process that occurs through associations between environmental stimuli and naturally occurring stimuli.
-Operant Conditioning,Learning process in which behavior is modified by its consequences through reinforcement or punishment.
-Cognitive Dissonance,Mental discomfort that results from holding conflicting beliefs values or attitudes.
-Confirmation Bias,Tendency to search for information that confirms one's preexisting beliefs.
-Neuroplasticity,Brain's ability to reorganize itself by forming new neural connections throughout life.
-Self-Efficacy,Individual's belief in their capacity to execute behaviors necessary to produce specific performance attainments.
-Social Facilitation,Tendency for people to perform better on simple tasks when in the presence of others.
-Group Polarization,Phenomenon where group discussion strengthens the dominant position among group members.
-Bystander Effect,The decreased likelihood of a person intervening in an emergency when others are present.
-Fundamental Attribution Error,Tendency to overestimate the influence of personality and underestimate the influence of situations.
-Attachment Theory,Theory suggesting that children form attachment styles with caregivers that influence relationships throughout life.
-Maslow's Hierarchy of Needs,Theory in psychology proposing a hierarchy of human needs from basic physiological needs to self-actualization.
-Conformity,Change in behavior due to the real or imagined influence of other people.
-Obedience,Form of social influence where a person follows direct commands from a perceived authority figure.
-Schema,Cognitive framework that helps organize and interpret information in the world around us.
-Learned Helplessness,Condition in which a person suffers from a sense of powerlessness following exposure to uncontrollable events.
-Intrinsic Motivation,Engaging in behavior because it is personally rewarding rather than for external reward.
-Extrinsic Motivation,Performing an activity to attain a reward or avoid punishment rather than for inherent satisfaction.
-Nature vs. Nurture,Debate about whether human behavior is determined by environment or genetics.
-Critical Period,Specific time during development when the presence or absence of certain experiences has a long-lasting influence.
-Neurotransmitters,Chemical messengers that transmit signals across a synapse from one neuron to another.
-Serotonin,Neurotransmitter believed to help regulate mood, social behavior, appetite, digestion, sleep, and memory.
-Dopamine,Neurotransmitter associated with reward and pleasure systems in the brain.
-Fight-or-Flight Response,Physiological reaction that occurs in response to a perceived harmful event, attack, or threat to survival.
-Limbic System,Set of brain structures involved in processing emotions and forming memories.
-Habituation,Decrease in response to a stimulus after repeated presentations.
-Sensory Adaptation,Diminished sensitivity to a stimulus after constant exposure.
-Stereotype Threat,Situation in which people are at risk of confirming negative stereotypes about their social group.
-Implicit Bias,Unconscious attitudes or stereotypes that affect our understanding, actions, and decisions.
-Positive Reinforcement,Adding a desirable stimulus to increase a behavior.
-Negative Reinforcement,Removing an aversive stimulus to increase a behavior.
-Positive Punishment,Adding an aversive stimulus to decrease a behavior.
-Negative Punishment,Removing a desirable stimulus to decrease a behavior.
-Defense Mechanisms,Unconscious psychological strategies to protect against anxiety and maintain self-image.
-Projection,Defense mechanism where one's own unacceptable urges are attributed to another person.
-Regression,Defense mechanism where one reverts to an earlier stage of development to cope with stress.
-Displacement,Defense mechanism that shifts emotional reactions from the original object to a more acceptable substitute.
-Sublimation,Defense mechanism where unacceptable impulses are transformed into socially acceptable activities.
-Repression,Defense mechanism that pushes unacceptable thoughts into the unconscious.
-Rationalization,Defense mechanism involving the justification of actions or feelings in a logical manner.
-Denial,Defense mechanism in which a person refuses to recognize or acknowledge an unbearable reality.
-Groupthink,Psychological phenomenon that occurs within a group where the desire for harmony results in irrational decision-making.
-Compliance,Superficial change in behavior to fit in with a group while privately disagreeing.
-Identification,Modeling behavior after someone else because of an emotional attachment.
-Internalization,Adopting values and attitudes of another person as your own.
-Cognitive Bias,Systematic pattern of deviation from rational judgment in specific situations.
-Availability Heuristic,Mental shortcut that relies on immediate examples that come to mind when evaluating a topic.
-Representativeness Heuristic,Mental shortcut used when making judgments about the probability of an event based on similarity.
-Anchoring Bias,Tendency to rely too heavily on the first piece of information offered when making decisions.
-Self-Serving Bias,Tendency to attribute successes to internal factors and failures to external factors.
-Just-World Hypothesis,Cognitive bias that assumes that people get what they deserve in life.
+Absolute threshold,the smallest level of stimulus detectable 50% of the time
+Accommodation,the process of revising existing cognitive schemas to include new information
+Acetylcholine,Neurotransmitter for muscle activation and memory
+Achievement tests,evaluations designed to measure the knowledge a person has acquired
+Acoustic encoding,"the conversion of sounds, particularly words, into a coded form that can be stored in the brain"
+Action Potential,Neural impulse traveling down axon
+Action potential,an electrical impulse that transmits information along an axon in a neuron
+Active listening,"a technique involving restating, clarifying, and reflecting on what's heard"
+Adaptation-level phenomenon,the tendency to judge stimuli relative to past experiences
+Addiction,a compulsive physiological need for a substance despite harmful consequences
+Adolescence,the transitional period between childhood and adulthood marked by physical and psychological changes
+Adrenal glands,endocrine glands that release stress hormones like epinephrine and norepinephrine
+Aggression,hostile or violent behavior intended to dominate or intimidate
+Agreeableness,"trusting, cooperative, and compassionate (CANOE)"
+Alcohol,Depressant
+Algorithm,a step-by-step procedure guaranteeing problem-solving accuracy
+All-or-None Principle,Neuron fires completely or not at all
+Alpha waves,brain waves indicating relaxed wakefulness
+Altruism,Unselfish regard for others' welfare
+Altruism,selfless concern for others' welfare
+Amnesia,partial or total memory loss
+Amphetamines,stimulants increasing neural activity and body functions
+Amygdala,almond-shaped neural clusters linked to emotional processing
+Anal stage,toilet training focus (18-36 months)
+Anorexia nervosa,eating disorder characterized by self-starvation and excessive weight loss
+Antianxiety drugs,medications that reduce tension and anxiety
+Antidepressants,medications that alleviate depression by affecting neurotransmitters
+Antipsychotic drugs,medications used to manage psychotic symptoms
+Antisocial personality disorder,disregard for others' rights with manipulative behavior
+Anxiety disorders,psychological disorders characterized by distressing anxiety
+Aphasia,language impairment from brain damage
+Applied research,scientific study aimed at solving practical problems
+Aptitude tests,assessments predicting future performance potential
+Asch,Conformity experiment demonstrating tendency to agree with group consensus even when wrong
+Assimilation,interpreting new experiences through existing schemas
+Association areas,brain regions integrating sensory information
+Associative learning,learning that certain events occur together
+Attachment,emotional bond between infant and caregiver
+Attention-deficit/hyperactivity disorder (ADHD),persistent inattention and/or hyperactivity
+Attitude,feelings influencing responses to objects/people
+Attribution Theory,"tendency to give explanations for someone's behavior, often by crediting situation or person's disposition"
+Attribution theory,explanation of how people attribute causes to behavior
+Audition,the sense of hearing
+Autism spectrum disorder,developmental disorder affecting communication/social interaction
+Automatic processing,unconscious encoding of incidental information
+Autonomic nervous system,controls glands and internal organ muscles
+Autonomy vs Shame,1-3 years
+Availability heuristic,estimating likelihood based on memory availability
+Availability heuristic,estimating probability based on ease of recall
+Aversive conditioning,associating unpleasant stimuli with unwanted behaviors
+Axon,neuron extension passing messages to other neurons
+Babbling stage,vocal exploration with random sounds (4-10 months)
+Babbling stage,early speech stage with spontaneous sounds
+Barbiturates,drugs depressing central nervous system activity
+Basal metabolic rate,body's resting energy expenditure
+Basic research,pure science expanding knowledge base
+Basic trust,Erikson's concept of world predictability/safety
+Behavior genetics,study of genetic-environment influences on behavior
+Behavior therapy,therapy applying learning principles to change behavior
+Behavioral medicine,integration of behavioral/medical knowledge
+Behavioral psychology,scientific study of observable behavior
+Behaviorism,view that psychology should study behavior without mental processes
+Belief perseverance,clinging to beliefs despite contradictory evidence
+Binge-eating disorder,eating disorder with compulsive overeating
+Binocular cues,depth cues requiring both eyes
+Biofeedback,electronic monitoring of physiological states
+Biological psychology,study of biological processes influencing behavior
+Biomedical therapy,prescribed medications affecting brain chemistry
+Biopsychosocial approach,integrated biological/psychological/social approach
+Bipolar disorder,alternating depression and mania episodes
+Blind spot,retinal area lacking receptor cells
+Bottom-up processing,analysis starting with sensory receptors
+Brainstem,oldest brain region controlling automatic survival functions
+Broca's area,brain region controlling speech production
+Bulimia nervosa,eating disorder with binge-purge cycles
+Bystander Effect,Reduced likelihood of helping in presence of others
+Bystander effect,diminished helping behavior in group situations
+CT scan,X-ray composite brain images
+Caffeine,Stimulant
+Cannon-Bard theory,simultaneous emotion/physiological experience
+Case study,in-depth analysis of individual/group
+Catharsis,emotional release through expression
+Central nervous system (CNS),brain and spinal cord
+Cerebellum,brain region coordinating voluntary movements
+Cerebral cortex,intricate neural covering of brain hemispheres
+Change blindness,failing to notice environmental changes
+Chromosomes,threadlike DNA structures containing genes
+Chunking,organizing items into familiar units
+Circadian rhythm,biological 24-hour cycle
+Classical conditioning,learning associations between events
+Client-centered therapy,humanistic therapy with active listening
+Clinical psychology,studies/assesses/treats psychological disorders
+Cocaine,Stimulant
+Cochlea,"coiled, bony fluid-filled tube in inner ear"
+Cognition,mental activities associated with thinking
+Cognitive Dissonance,people change their behavior to avoid contradictions between actions and beliefs
+Cognitive development,developing reasoning/philosophical understanding
+Cognitive dissonance,discomfort from conflicting attitudes/behaviors
+Cognitive map,mental representation of physical space
+Cognitive neuroscience,interdisciplinary study of brain activity
+Cognitive psychology,scientific study of mental processes
+Cognitive-behavioral therapy,integrates cognitive/behavioral approaches
+Collective unconscious,Jungian concept of shared ancestral memories
+Collective unconscious,Jung's concept of shared inherited memories
+Collectivism,prioritizing group goals over personal
+Color constancy,perceiving consistent color despite lighting
+Companionate love,deep affectionate attachment
+Concept,mental grouping of similar objects/events
+Concrete Operational,7-11 years
+Concrete operational stage,Piaget's logical thinking stage
+Conditioned reinforcer,stimulus gaining power through association
+Conditioned response,learned response to conditioned stimulus
+Conditioned stimulus,originally neutral stimulus triggering response
+Conduction hearing loss,hearing loss from mechanical damage
+Cones,retinal receptors detecting fine detail/color
+Confirmation bias,searching for confirming evidence
+Conflict,perceived incompatibility of actions/goals
+Conformity,adjusting behavior to match group standards
+Confounding variable,factor other than independent variable
+Conscientiousness,"organized, responsible, and disciplined (CANOE)"
+Consciousness,awareness of self and environment
+Conservation,understanding quantity remains despite shape
+Content validity,test measuring intended content
+Continuous reinforcement,reinforcing desired response every time
+Control group,group not exposed to treatment
+Conventional morality,uphold laws/social rules simply because they exist
+Convergence,neuromuscular cue for judging distance
+Coping,alleviating stress using strategies
+Coronary heart disease,clogging of heart nourishing vessels
+Corpus callosum,neural fibers connecting hemispheres
+Correlation,measure of how variables relate
+Counseling psychology,assists with life challenges
+Counterconditioning,replacing negative with positive responses
+Creativity,ability to produce novel ideas
+Critical period,optimal period for skill acquisition
+Critical thinking,thinking that evaluates evidence
+Cross-sectional study,comparing different age groups
+Crystallized intelligence,accumulated knowledge/skills
+Culture,shared ideas/behaviors transmitted generations
+DNA,complex molecule containing genetic code
+DSM-IV-TR,diagnostic classification system
+Debriefing,post-experiment explanation
+Deindividuation,Loss of self-awareness in group situations
+Delta waves,slow brain waves in deep sleep
+Delusions,false beliefs
+Dendrites,neuron extensions receiving messages
+Denial,refusal to accept reality or facts
+Dependent variable,outcome being measured
+Depolarization,Positive ions enter neuron making it susceptible to fire action potential
+Depressants,drugs reducing neural activity
+Depth perception,seeing objects in three dimensions
+Developmental psychology,studies lifespan changes
+Difference threshold,minimum detectable difference
+Discrimination,unjustifiable negative behavior
+Discriminative stimulus,signal that response will be reinforced
+Displacement,redirecting emotions to substitute target
+Dissociation,disconnection from thoughts/identity
+Dissociative disorders,conscious awareness separation
+Dissociative identity disorder,multiple distinct identities
+Donald Meichenbaum,developed stress inoculation training
+Dopamine,Involved in movement and reward systems
+Double-blind procedure,both participants/staff unaware
+Down syndrome,extra chromosome 21 causing disability
+Dream,sequence of story-like images
+Drive-reduction theory,physiological needs create drives
+Dual processing,conscious/unconscious processing
+Echoic memory,auditory sensory memory
+Eclectic approach,multiple therapy techniques
+Ecstasy,Hallucinogen
+Ecstasy (MDMA),stimulant/hallucinogen hybrid
+Educational psychology,studies learning processes
+Effortful processing,encoding requiring attention
+Ego,executive mediator between id/superego
+Ego,rational mediator between id and reality
+Egocentrism,difficulty perceiving others' perspectives
+Electra complex,girl's unconscious desire for father rivalry with mother
+Electroconvulsive therapy (ECT),electric current brain treatment
+Electroencephalogram (EEG),brain electrical activity recording
+Embryo,developing organism 2 weeks to 2 months
+Emerging adulthood,post-adolescence pre-adulthood
+Emotion,response involving physiology/behavior
+Emotional intelligence,perceiving/managing emotions
+Empirically derived test,developed from test responses
+Empiricism,knowledge from sensory experience
+Encoding,information processing into memory
+Endocrine system,body's hormone-secreting glands
+Endorphins,natural opiate-like neurotransmitters
+Endorphins,Natural pain-relieving neurotransmitters
+Environment,every non-genetic influence
+Equity,condition giving/receiving equally
+Estrogens,female sex hormones
+Evidence-based practice,clinical decisions from best evidence
+Evolutionary psychology,behavior natural selection
+Experiment,manipulating variables to observe
+Experimental group,group receiving treatment
+Experimental psychology,behavior/mental processes study
+Explicit memory,facts/experiences consciously known
+Exposure therapies,confront anxiety-provoking stimuli
+External locus,belief that outcomes depend on external forces
+External locus of control,perceived outside control
+Extinction,diminishing conditioned response
+Extrasensory perception (ESP),controversial perception claims
+Extraversion,"sociable, energetic, and assertive (CANOE)"
+Extrinsic motivation,external rewards drive
+Facial feedback effect,facial expressions influence emotion
+Factor analysis,statistical identification clusters
+Family therapy,treats family as system
+Feature detectors,nerve cells responding to stimuli
+Fetal alcohol syndrome (FAS),physical/cognitive abnormalities
+Fetus,developing human 9 weeks to birth
+Figure-ground,organization into figures/background
+Fixation,inability to see new solutions
+Fixation,persistent focus on earlier psychosexual stage due to unresolved conflict
+Fixed interval schedule,reinforcement after time period
+Fixed ratio schedule,reinforcement after response number
+Flashbulb memory,vivid memory of emotional event
+Fluid intelligence,reasoning and problem-solving
+Foot-in-the-door phenomenon,compliance technique increasing requests
+Foreclosure,committing without exploration (identity)
+Formal operational stage,Piaget's abstract reasoning stage
+Free association,reporting thoughts without censorship
+Frontal lobe,neural area behind forehead
+Frustration-aggression principle,frustration causing aggression
+Functional fixedness,only seeing conventional functions
+Functionalism,consciousness adaptation study
+Fundamental attribution error,dispositional attribution emphasis
+GABA (gamma-aminobutyric acid),major inhibitory neurotransmitter
+Gate-control theory,spinal cord pain gate
+Gender,psychological/cultural maleness/femaleness
+Gender dysphoria,conflict between physical/psychological gender
+Gender identity,sense of being male/female
+Gender role,cultural expectations for males/females
+Gender typing,acquiring gender-appropriate characteristics
+General adaptation syndrome,stress response stages
+General intelligence,underlying all specific abilities
+Generalized anxiety disorder,persistent excessive worrying
+Generativity vs Stagnation,40-65 years
+Genes,biochemical units of heredity
+Gestalt,organized whole; sum exceeds parts
+Glial cells,neurons' supporting cells
+Glutamate,Major excitatory neurotransmitter
+Goal,Something we strive to accomplish that typically requires extended effort
+Group polarization,group decision extremity
+Groupthink,excessive concurrence-seeking
+Hallucinations,sensory experiences without stimuli
+Hardiness,stress resilience through commitment/control/challenge
+Hatha Yoga,physical yoga postures
+Heritability,trait variation proportion from genetics
+Heroin,Depressant
+Hierarchy of needs,physiological needs pre-psychological
+Hindsight bias,I-knew-it-all-along belief
+Hippocampus,memory-forming neural area
+Homeostasis,maintaining physiological balance
+Hormones,chemical messengers between glands
+Humanistic approach,positive growth emphasis
+Humanistic psychology,self-fulfillment potential study
+Humanistic theories,growth/self-actualization emphasis
+Hypnosis,social interaction producing suggestible state
+Hypochondriasis,disease preoccupation
+Hypothalamus,brain's motivational center
+Id,impulsive unconscious psyche
+Identity vs Role Confusion,12-20 years
+Illusory correlation,perceiving nonexistent correlation
+Implicit memory,unconscious skill/classical conditioning retention
+Imprinting,critical-period species-specific attachment
+Inattentional blindness,unattended stimuli invisibility
+Incentive,positive/negative environmental stimulus
+Independent variable,experimental factor manipulated
+Individualism,personal goals pre-group goals
+Industry vs Inferiority,5-12 years
+Information processing,encoding/storing/retrieving information
+Initiative vs. Guilt,3-5 years
+Insight,problem-solving through restructuring
+Insomnia,chronic difficulty sleeping
+Instinct,complex inborn behavior pattern
+Integrity vs Despair,65+ years
+Intelligence,mental quality for learning/reasoning
+Intelligence quotient (IQ),intelligence test score
+Interpersonal attraction,liking/loving others
+Interpersonal therapy,depression's social-influences therapy
+Intrinsic motivation,activity enjoyment motivation
+Introspection,examining one's mental processes
+Intuition,immediate thought/understanding
+Iris,eye's adjustable diaphragm
+James-Lange theory,emotion follows arousal
+Jamming,sleep spindles' memory-retention theory
+Jungian psychology,analytical psychology
+Kinesthesis,movement/position sense
+Kohlberg,moral reasoning development
+Language,communication through meaningful symbols
+Latency period,tranquil psychosexual development period
+Latent content,dream's unconscious meaning
+Latent learning,unreinforced learning demonstration
+Law of effect,rewarded behaviors likely recurring
+Learned helplessness,escape/avoid failure passivity
+Learning,experience-based behavior/knowledge change
+Lens,focusing eye structure
+Levels of processing,shallow/deep encoding influencing retention
+Light adaptation,increasing light sensitivity
+Limbic system,doughnut-shaped neural system
+Long-term memory,unlimited-capacity permanent storage
+Long-term potentiation,neural change underlying memory
+Longitudinal study,same individuals time sampling
+LSD,Hallucinogen
+Maintenance rehearsal,information repetition
+Major depressive disorder,persistent depressed mood
+Manifest content,dream's remembered content
+MDMA,Hallucinogen
+Meditation,enhanced consciousness state
+Memory,events/information encoding/storage/retrieval
+Menarche,first menstruation
+Mental set,problem-solving tendency from experience
+Meta-analysis,averaging multiple studies results
+Micturition,urinating
+Mirror neurons,motoric-empathy neurons
+Modeling,observing then imitating others
+Monocular cues,one-eye visual cues
+Mood disorders,emotion disturbances
+Morpheme,smallest meaning-carrying unit
+Motivation,goal-directed behavior mechanism
+Muller-Lyer illusion,arrow-line length illusion
+Myelin sheath,neuron-isolation fatty tissue
+Narcissism,excessive self-love
+Narcolepsy,uncontrollable sleep episodes
+Narcotic,Depressant
+Natural selection,advantageous genes survival
+Naturalistic observation,behavior observation without manipulation
+Nature-nurture issue,experience/genetics interaction
+Negative reinforcement,increasing behavior by removing stimulus
+Neo-Freudian,Freud's principles modifiers
+Nerves,axon bundles containing neural pathways
+Neural impulse,neuron's traveling electric signal
+Neuroadaptation,changing brain sensitivity
+Neuron,nervous system's basic cell
+Neuroscience,nervous system study
+Neuroticism,"anxious, pessimistic, and moody (CANOE)"
+Neurotransmitters,neural messengers crossing synapses
+Nicotine,Stimulant
+Nocturnal emission,sleep-accompanied ejaculation
+Nocturnal emission,sleep-related ejaculation
+Nodes of Ranvier,myelin-sheath gaps
+Norepinephrine,arousal/alertness neurotransmitter
+Normal curve,symmetrical bell-shaped frequency distribution
+Norms,standard scores comparisons
+Observational learning,imitating others' watching
+Obsessive-compulsive disorder,ritualistic thoughts/behaviors
+Occipital lobe,brain's posterior visual area
+Oedipal complex,"boy's unconscious sexual desire for mother, rivalry with
+father"
+Oedipal complex,"boy's unconscious sexual desire for mother, rivalry with father"
+One word stage,using single words representing more (12-18 months)
+Openness,"curious, adventurous, and creative (CANOE)"
+Operant behavior,rewarded/punished voluntary actions
+Operant conditioning,consequence-influenced behavior
+Operational definition,specifying measurement procedure
+Opiates,pain-killing narcotics
+Opponent-process theory,opposing color-based retina cells
+Optic nerve,retina-originating neural fibers
+Oral stage,pleasure from mouth stimulation (<18 months)
+Orbitofrontal cortex,ventromedial prefrontal cortex
+Orgasm,sexual climax
+Overconfidence,excessive certainty correctness
+Panic disorder,recurring severe anxiety
+Parallel processing,simultaneous information processing
+Paranoid schizophrenia,delusional social prejudice
+Parasympathetic nervous system,arousal-calming system
+Parent efficacy,belief in effective parenting
+Parietal lobe,touch-location brain cortex
+Perceived self-efficacy,performing specific task belief
+Perception,sensory input interpretation
+Perceptual constancy,unchanging object perception despite stimuli
+Peripheral nervous system,nervous system outside CNS
+Personal space,surrounding body territory
+Personality,distinctive thought/behavior patterns
+Personality inventories,self-description questionnaires
+Personality psychology,individual differences study
+Personalization,external event internal cause attribution
+PET scan,blood-flow radioactive glucose detection
+Phallic stage,pleasure from genitals stimulation (3-6 years)
+Phenylketonuria (PKU),phenylalanine metabolism disorder
+Phenylketonuria,liver enzyme deficiency disease
+Pheromones,chemical attraction molecules
+Phobia,object/situation irrational fear
+Physical dependence,drug abstinence withdrawal symptoms
+Physiological psychology,behavior's biological basis study
+Placebo effect,inert substance healing belief
+Pleasure principle,immediate gratification
+Positive psychology,human strengths study
+Positive reinforcement,adding stimulus increasing behavior
+Postconventional morality,morality from personal principles/ethics
+Postganglionic neuron,postganglia axon-receiving neuron
+Posttraumatic stress disorder (PTSD),traumatic memory anxiety
+Preconscious,partly conscious thoughts/memories
+Preconventional morality,based on self-interest
+Prefrontal cortex,executive function brain area
+Preoperational stage,Piaget's pre-logical reasoning stage
+Prejudice,unjustifiable negative attitude
+Prenatal,conception to birth
+Prenatal development,conception to birth development
+Presymptomatic testing,disease susceptibility genetic testing
+Primary reinforcer,satisfying biological needs
+Priming,activating associations memory
+Proactive Interference,old information inhibiting new learning
+Proactive interference,old information disrupting new memory
+Progesterone,pregnancy-maintaining female hormone
+Projective test,ambiguous stimuli self-projection
+Prosocial behavior,positive social interaction
+Prototype,average category member
+Proximity,nearness perceptual grouping
+Psychiatry,mental disorder medical study
+Psychoactive drugs,mood/perception-altering chemicals
+Psychoanalysis,unconscious's treatment theory
+Psychodynamic theories,unconscious motivations study
+Psychological disorder,distressing/dysfunctional behavior
+Psychology,behavior/mental processes study
+Psychometric approach,testing mental traits
+Psychometrics,psychological test development
+Psychoneuroimmunology,psychological/health correlations
+Psychophysics,sensation physical relation study
+Psychophysiological illness,psychologically caused physical symptoms
+Psychopharmacology,drug effects study
+Psychosexual stages,Freud's development stages
+Psychosocial stages,Erikson's development stages
+Psychosurgery,brain surgery psychological disorder treatment
+Psychotherapy,psychological treatment through interaction
+Public opinion,issue-focused group's shared attitudes
+Punishment,decreasing behavior through stimulus
+Random assignment,group allocation preventing bias
+Random sample,population-representing selection
+Rationalization,bad behavior justification
+Rationalization,making unacceptable behaviors reasons
+Reaction formation,behavior contradicting hidden unacceptable impulses
+Reactive inhibition,fatigue following behavior
+Recall,learned material reproduction
+Recognition,previously encountered identification
+Reflex,automatic stimulus response
+Regression,returning to earlier development stages
+Regression,reverting to earlier development behaviors
+Rehearsal,conscious/nonconscious information repetition
+Reinforcement,strengthening responses
+Relearning,previous learning saving measure
+Reliability,consistent test performance
+REM sleep,paradoxical sleep
+Replication,repeated research results comparison
+Representativeness heuristic,similarity-based probability judgment
+Repression,anxiety-provoking unconscious thoughts
+Repression,anxiety-provoking unconscious force
+Resilience,recovering from adversity
+Resistance,unconscious-force psychoanalysis opposition
+Resistance,unconscious-revealing analysis opposition
+Respondent behavior,stimulus-elicited automatic behavior
+Response set,test-response pattern
+Resting potential,Neutral state of neuron when not firing
+Reticular formation,nerve network controlling arousal
+Retina,light-sensitive eye lining
+Retinal disparity,different retina images
+Retrieval,memory recovery process
+Retroactive interference,new information disrupting old memory
+Retrograde amnesia,past-event memory loss
+Rewards,pleasant consequences
+Rogers,client-centered therapy developer
+Role,expected position behavior
+Rods,black/white retinal receptors
+RRR Test,psychology experiment validity test
+Savant syndrome,single developed intellectual ability
+Schema,knowledge framework
+Schedule of reinforcement,delivery timing pattern
+Schizophrenia,disorganized thinking/emotional disorder
+Scientific method,systematic observation/hypothesis testing
+Seasonal affective disorder,winter-onset depression
+Secondary reinforcer,acquired reinforcing characteristics
+Selective attention,focusing conscious awareness
+Self-actualization,achieving potential
+Self-concept,self-understanding collection
+Self-disclosure,revealing personal information
+Self-efficacy,performing successfully capability
+Self-serving bias,claiming success/blaming failure externally
+Selye,General Adaptation Syndrome developer
+Semantic encoding,meaning-based encoding
+Semantic memory,facts general knowledge
+Sensation,stimulus detection
+Sensorimotor stage,Piaget's action-learning stage
+Sensorineural hearing loss,cochlea/auditory nerve damage
+Sensory adaptation,sensitivity reduction from constant stimulation
+Sensory memory,transitory stimulus representation
+Serial position effect,remembering list start/end
+Serotonin,mood/aggression/sleep neurotransmitter
+Serotonin,Neurotransmitter regulating mood and sleep
+Set point,weight-maintenance level
+Sexual harassment,unwelcome sexual advances
+Sexual orientation,romantic/sexual attraction pattern
+Shame and doubt,distrusting one's will/abilities
+Shaping,reinforcing approaching responses
+Short-term memory,limited-capacity temporary storage
+Signal detection theory,sensory decision theory
+Sleep,periodic consciousness loss
+Sleep apnea,breathing-disrupted sleep
+Social clock,age-appropriate developmental timings
+Social cognition,thinking about social world
+Social exchange theory,cost/benefit relationship theory
+Social facilitation,audience-enhanced performance
+Social identity,group-membership self-concept
+Social learning theory,observation learning
+Social loafing,group-setting effort reduction
+Social neuroscience,biological basis social behavior
+Social psychology,how situations/others influence
+Social-cognitive learning,observational learning
+Social-cognitive theories,thought/expectation/learning's behavior influence
+Somatic nervous system,skeletal muscles control
+Somatoform disorders,physical symptoms without biological cause
+Spacing effect,distributed study effectiveness
+Spontaneous recovery,extinguished response reappearance
+Standard deviation,variance measure
+Standardization,test distribution development
+Stanford-Binet,intelligence test
+Statistical significance,chance unlikelihood
+Stereotype,characteristics group belief
+Stereotyping,perceiving group individuals similarly
+Stimulants,neural activity increasers
+Storage,memory coding/maintaining
+Stress,demanding circumstance appraisal
+Stressors,stress-producing factors
+Structuralism,consciousness structure analysis
+Sublimation,socially acceptable expression
+Substance use disorder,substance use problems
+Superego,conscience/ideals
+Surface traits,observable individual differences
+Survey,questioning technique
+Sympathetic nervous system,arousal-activating system
+Synapse,neurons' communication junction
+Systematic desensitization,anxiety counter-conditioning
+Taste,sweet/sour/salty/bitter perception
+Telegraphic speech,grammar-lacking essential words
+Telepathy,thoughts communicating claim
+Temperament,innate emotional disposition
+Temporal lobe,side-brain auditory center
+Teratogens,birth-defect-causing agents
+Terminal button,axon's synapse end
+Testosterone,male sex hormone
+Thalamus,sensory relay center
+Theory,principles explaining observations
+Therapist Characteristics,Warmth and genuineness
+Thorndike,trial/error animal learning experimenter
+Threshold,reaction minimum stimulation
+Timbre,sound wave's complexity
+Token economy,behavior-token reinforcement system
+Top-down processing,information guided perception
+Trait,characteristic behavior/thinking disposition
+Transcendence,becoming who you want to be
+Transduction,stimulus-to-neural energy conversion
+Transfer,previous learning aiding new
+Transference,projecting significant-other feelings
+Twin studies,identical/fraternal comparisons
+Two-factor theory,arousal/cognition's emotion influence
+Type A,competitive/time-conscious personality
+Type B,easygoing personality
+Unconditional positive regard,accepting others without judgment
+Unconscious,unawarely influencing thoughts/behaviors
+Validation,understanding/accepting person
+Variable interval schedule,variable-time reinforcement
+Variable ratio schedule,variable-response reinforcement
+Vestibular sense,body movement/position sense
+Weber's law,detection depending on proportion
+Wernicke's area,language comprehension brain area
+Withdrawal,drug-abstinence sickness
+Working memory,consciousness-active memory
+Zone of proximal development,task range with guidance
