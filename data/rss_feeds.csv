@@ -1,0 +1,11 @@
+name,url,quality_rating
+NPR Health,https://feeds.npr.org/1001/rss.xml,5
+Science Daily Psychology,https://www.sciencedaily.com/rss/mind_brain/psychology.xml,5
+Psychology Today,https://www.psychologytoday.com/us/blog/feed,4
+BBC News - Health,https://feeds.bbci.co.uk/news/health/rss.xml,5
+New York Times - Health,https://rss.nytimes.com/services/xml/rss/nyt/Health.xml,5
+The Guardian - Psychology,https://www.theguardian.com/science/psychology/rss,4
+Scientific American - Mind,https://rss.sciam.com/sciam/mind-and-brain,5
+APA - PsycPort,https://www.apa.org/news/psycport/feed.xml,5
+Psych Central,https://psychcentral.com/feed,3
+Live Science - Health,https://www.livescience.com/feeds/section/health,4
