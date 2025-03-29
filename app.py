@@ -5,7 +5,7 @@ import schedule
 import time
 import threading
 import os
-from utils.news_processor import scan_feeds, filter_articles_by_quality
+from utils.news_processor import scan_feeds
 from utils.openai_service import analyze_article, generate_summary
 from utils.data_manager import load_psychology_terms, load_rss_feeds, save_analyzed_articles, load_analyzed_articles
 
@@ -96,10 +96,8 @@ with st.sidebar:
         st.session_state.scan_in_progress = False
         st.rerun()
     
-    # Quality filter
+    # Filter options
     st.subheader("Filter Options")
-    quality_threshold = st.slider("Source Quality Threshold", 1, 5, 3, 
-                                help="Filter articles based on source reliability (1-5)")
     
     # Filter by psychology term
     term_filter = st.multiselect("Filter by Psychology Term", 
@@ -116,9 +114,6 @@ tab1, tab2 = st.tabs(["Psychology News", "Term Reference"])
 with tab1:
     # Filter articles based on sidebar selections
     filtered_articles = st.session_state.analyzed_articles
-    
-    # Apply quality filter
-    filtered_articles = filter_articles_by_quality(filtered_articles, quality_threshold)
     
     # Apply term filter if selected
     if term_filter:
