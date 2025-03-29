@@ -42,13 +42,9 @@ rss_feeds = load_rss_feeds()
 with st.sidebar:
     st.header("Settings")
     
-    # API Key input
-    api_key = st.text_input("OpenAI API Key", type="password", 
-                           help="Enter your OpenAI API key to enable article analysis")
-    
-    if api_key:
-        os.environ["OPENAI_API_KEY"] = api_key
-        st.session_state.api_key_set = True
+    # The API key is now set automatically in the backend
+    # Set API key set flag to true since we have it configured as an environment variable
+    st.session_state.api_key_set = True
     
     # Display last scan time
     if st.session_state.last_scan_time:
@@ -57,51 +53,48 @@ with st.sidebar:
         st.info("No scans performed yet")
     
     # On-demand scan button
-    if st.button("Scan News Now", disabled=st.session_state.scan_in_progress or not st.session_state.api_key_set):
-        if not st.session_state.api_key_set:
-            st.error("Please enter your OpenAI API key first")
-        else:
-            st.session_state.scan_in_progress = True
-            with st.spinner("Scanning RSS feeds for psychology-related news..."):
-                # Pass existing articles to avoid duplicates
-                new_articles = scan_feeds(rss_feeds, psychology_terms, st.session_state.analyzed_articles)
+    if st.button("Scan News Now", disabled=st.session_state.scan_in_progress):
+        st.session_state.scan_in_progress = True
+        with st.spinner("Scanning RSS feeds for psychology-related news..."):
+            # Pass existing articles to avoid duplicates
+            new_articles = scan_feeds(rss_feeds, psychology_terms, st.session_state.analyzed_articles)
+            
+            if new_articles:
+                st.info(f"Found {len(new_articles)} potential articles. Analyzing with OpenAI...")
+                analyzed_count = 0
                 
-                if new_articles:
-                    st.info(f"Found {len(new_articles)} potential articles. Analyzing with OpenAI...")
-                    analyzed_count = 0
-                    
-                    # Process articles with OpenAI
-                    for i, article in enumerate(new_articles):
-                        status_msg = st.empty()
-                        status_msg.write(f"Analyzing article {i+1} of {len(new_articles)}: {article['title']}")
-                        
-                        terms = analyze_article(article, psychology_terms)
-                        if terms:
-                            article['psychology_terms'] = terms
-                            
-                            # Generate educational summary if psychology terms were found
-                            status_msg.write(f"Generating educational summary for article {i+1}")
-                            article['summary'] = generate_summary(article, terms)
-                            
-                            # Add to our collection
-                            st.session_state.analyzed_articles.append(article)
-                            analyzed_count += 1
-                    
-                    # Save updated articles
+                # Process articles with OpenAI
+                for i, article in enumerate(new_articles):
                     status_msg = st.empty()
-                    status_msg.write("Saving analyzed articles...")
-                    save_analyzed_articles(st.session_state.analyzed_articles)
+                    status_msg.write(f"Analyzing article {i+1} of {len(new_articles)}: {article['title']}")
                     
-                    if analyzed_count > 0:
-                        st.success(f"Successfully analyzed {analyzed_count} psychology-related articles!")
-                    else:
-                        st.info("No articles with relevant psychological concepts were found")
-                else:
-                    st.info("No new psychology-related articles found")
+                    terms = analyze_article(article, psychology_terms)
+                    if terms:
+                        article['psychology_terms'] = terms
+                        
+                        # Generate educational summary if psychology terms were found
+                        status_msg.write(f"Generating educational summary for article {i+1}")
+                        article['summary'] = generate_summary(article, terms)
+                        
+                        # Add to our collection
+                        st.session_state.analyzed_articles.append(article)
+                        analyzed_count += 1
                 
-                st.session_state.last_scan_time = datetime.datetime.now()
-            st.session_state.scan_in_progress = False
-            st.rerun()
+                # Save updated articles
+                status_msg = st.empty()
+                status_msg.write("Saving analyzed articles...")
+                save_analyzed_articles(st.session_state.analyzed_articles)
+                
+                if analyzed_count > 0:
+                    st.success(f"Successfully analyzed {analyzed_count} psychology-related articles!")
+                else:
+                    st.info("No articles with relevant psychological concepts were found")
+            else:
+                st.info("No new psychology-related articles found")
+            
+            st.session_state.last_scan_time = datetime.datetime.now()
+        st.session_state.scan_in_progress = False
+        st.rerun()
     
     # Quality filter
     st.subheader("Filter Options")
