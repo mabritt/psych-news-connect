@@ -4,7 +4,7 @@ import time
 import hashlib
 from dateutil import parser as date_parser
 
-def scan_feeds(rss_feeds, psychology_terms, existing_articles=None):
+def scan_feeds(rss_feeds, psychology_terms, existing_articles=None, max_articles=20):
     """
     Scan RSS feeds for new articles related to psychology terms
     
@@ -12,9 +12,10 @@ def scan_feeds(rss_feeds, psychology_terms, existing_articles=None):
         rss_feeds (pd.DataFrame): DataFrame containing RSS feed URLs and metadata
         psychology_terms (pd.DataFrame): DataFrame containing psychology terms
         existing_articles (list, optional): List of already processed articles to avoid duplicates
+        max_articles (int, optional): Maximum number of articles to return, defaults to 20
         
     Returns:
-        list: List of dictionaries containing article data
+        list: List of dictionaries containing article data, limited to the most recent max_articles
     """
     all_new_articles = []
     
@@ -105,8 +106,16 @@ def scan_feeds(rss_feeds, psychology_terms, existing_articles=None):
         except Exception as e:
             print(f"Error processing feed {feed['name']}: {str(e)}")
     
+    # Sort articles by date (newest first) before limiting
+    all_new_articles = sorted(all_new_articles, key=lambda x: x.get('published_parsed', 0), reverse=True)
+    
+    # Limit to max_articles (default 20)
+    limited_articles = all_new_articles[:max_articles]
+    
     print(f"Found {len(all_new_articles)} new potential psychology-related articles")
-    return all_new_articles
+    print(f"Limiting analysis to the {len(limited_articles)} most recent articles")
+    
+    return limited_articles
 
 def filter_articles_by_quality(articles, quality_threshold):
     """
