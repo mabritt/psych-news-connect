@@ -4,14 +4,15 @@ import time
 import hashlib
 from dateutil import parser as date_parser
 
-def scan_feeds(rss_feeds, psychology_terms):
+def scan_feeds(rss_feeds, psychology_terms, existing_articles=None):
     """
     Scan RSS feeds for new articles related to psychology terms
     
     Args:
         rss_feeds (pd.DataFrame): DataFrame containing RSS feed URLs and metadata
         psychology_terms (pd.DataFrame): DataFrame containing psychology terms
-    
+        existing_articles (list, optional): List of already processed articles to avoid duplicates
+        
     Returns:
         list: List of dictionaries containing article data
     """
@@ -20,9 +21,15 @@ def scan_feeds(rss_feeds, psychology_terms):
     # Extract all terms as a list for easier comparison
     terms_list = psychology_terms['Term'].tolist()
     
+    # Create a set of existing article IDs to avoid duplicates
+    existing_ids = set()
+    if existing_articles:
+        existing_ids = {article.get('id', '') for article in existing_articles}
+    
     # Scan each feed
     for _, feed in rss_feeds.iterrows():
         try:
+            print(f"Scanning feed: {feed['name']} ({feed['url']})")
             parsed_feed = feedparser.parse(feed['url'])
             
             # Process each article in the feed
@@ -30,11 +37,39 @@ def scan_feeds(rss_feeds, psychology_terms):
                 # Create a unique ID for the article based on its URL
                 article_id = hashlib.md5(entry.link.encode()).hexdigest()
                 
+                # Skip if this article is already processed
+                if article_id in existing_ids:
+                    continue
+                
                 # Extract article content
                 title = entry.get('title', '')
                 summary = entry.get('summary', '')
                 description = entry.get('description', '')
                 content = title + " " + summary + " " + description
+                
+                # Check if the article contains any psychology-related terms
+                # This is a basic keyword check - the OpenAI analysis will be more thorough
+                is_psychology_related = False
+                matched_terms = []
+                
+                # Basic keyword matching - this is just for initial filtering
+                # The AI will do a more thorough analysis later
+                for term in terms_list:
+                    # Convert both to lowercase for case-insensitive matching
+                    if term.lower() in content.lower():
+                        is_psychology_related = True
+                        matched_terms.append(term)
+                        if len(matched_terms) >= 3:  # Found enough terms
+                            break
+                
+                # If no direct term matches, we'll still include some articles for AI analysis
+                # as the AI can identify psychological concepts even when terms aren't explicitly mentioned
+                if not is_psychology_related and len(all_new_articles) < 15:
+                    # Include some articles even without direct matches for deeper AI analysis
+                    is_psychology_related = True
+                
+                if not is_psychology_related:
+                    continue
                 
                 # Set published date
                 published = entry.get('published', '')
@@ -61,13 +96,16 @@ def scan_feeds(rss_feeds, psychology_terms):
                     'published_parsed': published_parsed,
                     'source_name': feed['name'],
                     'source_quality': feed['quality_rating'],
-                    'content_for_analysis': content
+                    'content_for_analysis': content,
+                    'initial_matches': matched_terms
                 }
                 
                 all_new_articles.append(article)
+                print(f"Found potential psychology-related article: {title}")
         except Exception as e:
             print(f"Error processing feed {feed['name']}: {str(e)}")
     
+    print(f"Found {len(all_new_articles)} new potential psychology-related articles")
     return all_new_articles
 
 def filter_articles_by_quality(articles, quality_threshold):

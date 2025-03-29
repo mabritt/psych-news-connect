@@ -63,20 +63,39 @@ with st.sidebar:
         else:
             st.session_state.scan_in_progress = True
             with st.spinner("Scanning RSS feeds for psychology-related news..."):
-                new_articles = scan_feeds(rss_feeds, psychology_terms)
+                # Pass existing articles to avoid duplicates
+                new_articles = scan_feeds(rss_feeds, psychology_terms, st.session_state.analyzed_articles)
                 
                 if new_articles:
+                    st.info(f"Found {len(new_articles)} potential articles. Analyzing with OpenAI...")
+                    analyzed_count = 0
+                    
                     # Process articles with OpenAI
-                    for article in new_articles:
+                    for i, article in enumerate(new_articles):
+                        status_msg = st.empty()
+                        status_msg.write(f"Analyzing article {i+1} of {len(new_articles)}: {article['title']}")
+                        
                         terms = analyze_article(article, psychology_terms)
                         if terms:
                             article['psychology_terms'] = terms
+                            
+                            # Generate educational summary if psychology terms were found
+                            status_msg.write(f"Generating educational summary for article {i+1}")
                             article['summary'] = generate_summary(article, terms)
+                            
+                            # Add to our collection
                             st.session_state.analyzed_articles.append(article)
+                            analyzed_count += 1
                     
                     # Save updated articles
+                    status_msg = st.empty()
+                    status_msg.write("Saving analyzed articles...")
                     save_analyzed_articles(st.session_state.analyzed_articles)
-                    st.success(f"Found {len(new_articles)} new psychology-related articles!")
+                    
+                    if analyzed_count > 0:
+                        st.success(f"Successfully analyzed {analyzed_count} psychology-related articles!")
+                    else:
+                        st.info("No articles with relevant psychological concepts were found")
                 else:
                     st.info("No new psychology-related articles found")
                 
@@ -149,9 +168,12 @@ with tab2:
 # Background scheduler
 def scheduled_scan():
     if st.session_state.api_key_set and not st.session_state.scan_in_progress:
-        new_articles = scan_feeds(rss_feeds, psychology_terms)
+        # Pass existing articles to avoid duplicates
+        new_articles = scan_feeds(rss_feeds, psychology_terms, st.session_state.analyzed_articles)
         
         if new_articles:
+            analyzed_count = 0
+            
             # Process articles with OpenAI
             for article in new_articles:
                 terms = analyze_article(article, psychology_terms)
@@ -159,9 +181,11 @@ def scheduled_scan():
                     article['psychology_terms'] = terms
                     article['summary'] = generate_summary(article, terms)
                     st.session_state.analyzed_articles.append(article)
+                    analyzed_count += 1
             
             # Save updated articles
             save_analyzed_articles(st.session_state.analyzed_articles)
+            print(f"Scheduled scan: Added {analyzed_count} new psychology-related articles")
         
         st.session_state.last_scan_time = datetime.datetime.now()
 
