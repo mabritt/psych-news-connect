@@ -37,7 +37,7 @@ PsychNews Connect helps psychology students prepare for tests like the AP Psycho
    ```
 2. Install dependencies:
    ```
-   pip install -r requirements.txt
+   pip install -r requirements-github.txt
    ```
 3. Set up your OpenAI API key as an environment variable:
    ```
@@ -58,7 +58,7 @@ The application will be accessible at `http://localhost:8501`
 
 - Python 3.7+
 - OpenAI API key
-- Required Python packages (see requirements.txt)
+- Required Python packages (see requirements-github.txt)
 
 ## License
 
