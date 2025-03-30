@@ -2,6 +2,9 @@
 
 A Streamlit-powered educational tool that bridges AP Psychology terminology with current news events, using AI to generate contextual learning summaries for students.
 
+![GitHub repo](https://img.shields.io/badge/GitHub-psych--news--connect-blue)
+![Status](https://img.shields.io/badge/Status-Active-green)
+
 ## Overview
 
 PsychNews Connect helps psychology students prepare for tests like the AP Psychology exam by connecting psychological concepts to current news events. The app:
@@ -27,16 +30,29 @@ PsychNews Connect helps psychology students prepare for tests like the AP Psycho
 
 ## Setup & Installation
 
-1. Clone this repository
+1. Clone this repository:
+   ```
+   git clone https://github.com/mabritt/psych-news-connect.git
+   cd psych-news-connect
+   ```
 2. Install dependencies:
    ```
    pip install -r requirements.txt
    ```
-3. Set up your OpenAI API key as an environment variable
+3. Set up your OpenAI API key as an environment variable:
+   ```
+   # Linux/macOS
+   export OPENAI_API_KEY="your-api-key"
+   
+   # Windows
+   set OPENAI_API_KEY=your-api-key
+   ```
 4. Run the application:
    ```
    streamlit run app.py
    ```
+   
+The application will be accessible at `http://localhost:8501`
 
 ## Requirements
 
