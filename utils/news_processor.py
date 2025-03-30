@@ -107,7 +107,23 @@ def scan_feeds(rss_feeds, psychology_terms, existing_articles=None, max_articles
             print(f"Error processing feed {feed['name']}: {str(e)}")
     
     # Sort articles by date (newest first) before limiting
-    all_new_articles = sorted(all_new_articles, key=lambda x: x.get('published_parsed', 0), reverse=True)
+    # Convert any datetime objects to a timestamp for consistent comparison
+    def get_sort_key(article):
+        published = article.get('published_parsed')
+        if published:
+            # Handle various types of datetime objects that might come from feeds
+            if isinstance(published, time.struct_time):
+                return time.mktime(published)
+            elif hasattr(published, 'timestamp'):
+                return published.timestamp()
+            else:
+                # Default to current time if we can't determine
+                return time.time()
+        else:
+            # If no date, treat as oldest
+            return 0
+    
+    all_new_articles = sorted(all_new_articles, key=get_sort_key, reverse=True)
     
     # Limit to max_articles (default 20)
     limited_articles = all_new_articles[:max_articles]
